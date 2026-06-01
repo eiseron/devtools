@@ -4,7 +4,7 @@ defmodule EiseronDevtools.MixProject do
   def project do
     [
       app: :eiseron_devtools,
-      version: "0.1.0",
+      version: "0.1.1",
       elixir: "~> 1.18",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
@@ -36,7 +36,8 @@ defmodule EiseronDevtools.MixProject do
     [
       {:eiseron_credo_checks, git: "https://github.com/eiseron/credo-checks.git", tag: "v0.1.1"},
       {:sobelow, "~> 0.13"},
-      {:mix_audit, "~> 2.1"}
+      {:mix_audit, "~> 2.1"},
+      {:sourceror, "~> 1.0"}
     ]
   end
 end
